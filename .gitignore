@@ -1,0 +1,36 @@
+*.iml
+.gradle/
+/build/
+/app/build/
+/newSceneSDK/build/
+/captures/
+.externalNativeBuild/
+.cxx/
+local.properties
+.DS_Store
+
+# Android Studio
+.idea/
+
+# Build outputs
+*.apk
+*.ap_
+*.aab
+*.dex
+*.class
+bin/
+gen/
+out/
+release/
+**/Timo/
+**/baselineProfiles/
+**/output-metadata.json
+
+# Logs / temp
+*.log
+*.tmp
+*.swp
+*~
+
+# Local marker / junk
+SdkDemoCsj-2026-08-24
