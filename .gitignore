@@ -34,3 +34,12 @@ release/
 
 # Local marker / junk
 SdkDemoCsj-2026-08-24
+
+# Local SDK source and proprietary binaries
+newSceneSDK/
+
+# Local secrets / vendor credentials
+subscriptionKey.txt
+
+# Local SDK documentation
+SDK文档.md

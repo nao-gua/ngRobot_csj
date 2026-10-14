@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F7FA">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="#3F51B5"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/chat_title"
+            android:textColor="@android:color/white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_demo"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:minWidth="140dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/chat_sdk_debug"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:background="#5C6BC0" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E8EAF6"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:text="@string/chat_status_idle"
+        android:textColor="#333333"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_engine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFEBEE"
+        android:padding="12dp"
+        android:textColor="#B71C1C"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_partial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="32dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:textColor="#666666"
+        android:textSize="18sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_chat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:clipToPadding="false" />
+
+    <!-- 调试输入：默认收起高度，仍可用 -->
+    <LinearLayout
+        android:id="@+id/row_manual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="8dp"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/et_manual"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:hint="@string/chat_manual_hint"
+            android:inputType="text"
+            android:maxLines="2"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textSize="20sp"
+            android:background="@android:drawable/edit_text" />
+
+        <Button
+            android:id="@+id/btn_manual_send"
+            android:layout_width="140dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:text="@string/chat_manual_send"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="20dp"
+        android:background="#FFFFFF">
+
+        <!-- 待机：大号开始按钮 -->
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="0dp"
+            android:layout_height="88dp"
+            android:layout_weight="2"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:text="@string/chat_start"
+            android:textAllCaps="false"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <!-- 聆听中：可取消 -->
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="0dp"
+            android:layout_height="88dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:visibility="gone"
+            android:text="@string/chat_stop"
+            android:textAllCaps="false"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="0dp"
+            android:layout_height="88dp"
+            android:layout_weight="1"
+            android:text="@string/chat_clear"
+            android:textAllCaps="false"
+            android:textSize="24sp" />
+    </LinearLayout>
+</LinearLayout>

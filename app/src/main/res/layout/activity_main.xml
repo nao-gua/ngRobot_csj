@@ -10,7 +10,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         android:gravity="center"
-        android:text="@string/demo"
+        android:text="@string/chat_sdk_debug_title"
         android:textSize="25sp" />
 
     <Button

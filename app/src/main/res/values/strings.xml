@@ -120,4 +120,21 @@
     <string name="close_double_door">Double door closed</string>
     <string name="head_middle">Head back straight</string>
     <string name="page_back">return</string>
+    <string name="chat_title">语音对话</string>
+    <string name="chat_sdk_debug">SDK调试</string>
+    <string name="chat_sdk_debug_title">SDK 调试菜单</string>
+    <string name="chat_status_idle">状态：空闲</string>
+    <string name="chat_status_listening">状态：聆听中</string>
+    <string name="chat_status_thinking">状态：思考中</string>
+    <string name="chat_status_speaking">状态：播报中</string>
+    <string name="chat_start">开始对话</string>
+    <string name="chat_stop">结束对话</string>
+    <string name="chat_clear">清空</string>
+    <string name="chat_hint_start">点击「开始对话」后说一句话。识别到完整一句并回复后会自动回到待机，可再次开始。</string>
+    <string name="chat_session_started">已开启语音服务</string>
+    <string name="chat_cleared">对话已清空</string>
+    <string name="chat_manual_hint">ASR 不可用时可手动输入测试</string>
+    <string name="chat_manual_send">发送</string>
+    <string name="chat_diag">语音诊断</string>
+    <string name="chat_turn_done">本轮结束，已回到待机</string>
 </resources>

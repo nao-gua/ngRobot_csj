@@ -24,7 +24,7 @@
         android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
         tools:ignore="ScopedStorage" />
 
-    <application
+    <application android:requestLegacyExternalStorage="true"
         android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -50,6 +50,10 @@
             android:name=".future.FaceDemoActivity"
             android:configChanges="orientation|keyboardHidden"
             android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+                <activity
+            android:name=".chat.ChatActivity"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
         <activity android:name=".MainActivity" />
         <activity
             android:name=".future.SlamDemoActivity"

@@ -1,0 +1,7 @@
+{
+  "provider": "zhipu",
+  "baseUrl": "https://open.bigmodel.cn/api/paas/v4",
+  "apiKey": "3fb66bef09844852b78a611cdd6e5e76.OpHH18qPpUqn0cCG",
+  "model": "glm-5.3-flash",
+  "systemPrompt": "你是幼儿园里陪伴小朋友的教学机器人，名字叫乐乐。请用简洁、口语化的中文回答，一般两三句话以内，不要使用 Markdown。回答要礼貌、清楚，适合现场语音播报。"
+}
