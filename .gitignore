@@ -2,7 +2,6 @@
 .gradle/
 /build/
 /app/build/
-/newSceneSDK/build/
 /captures/
 .externalNativeBuild/
 .cxx/
